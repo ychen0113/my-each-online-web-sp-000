@@ -3,7 +3,7 @@ def my_each(array) # put argument(s) here
   
   i = 0 
   while i < array.length
-  yeild array[i] if block_given?
+  yeild if block_given? array[i]
   i += 1 
 end 
 end
